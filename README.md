@@ -4,6 +4,19 @@ A modern, responsive, and interactive **Amazon India (`amazon.in`)** e-commerce 
 
 ---
 
+## 📸 Website Previews & Screenshots
+
+### 1. 🌟 Storefront & Great Indian Festival Header
+![Amazon India Storefront](docs/screenshots/hero-storefront.png)
+
+### 2. ⚡ Live Lightning Deals with Real-Time Countdown & Progress
+![Amazon India Lightning Deals](docs/screenshots/lightning-deals.png)
+
+### 3. 📱 Top Deals in Mobiles & Audio with Rupee Pricing & EMI
+![Amazon India Product Cards](docs/screenshots/product-cards.png)
+
+---
+
 ## 🌟 Key Highlights & Unique Features
 
 ### 1. 🤖 Rufus AI India – Smart Shopping & Bargain Assistant
@@ -52,6 +65,11 @@ amazon/
 ├── index.html
 ├── package.json
 ├── vite.config.js
+├── docs/
+│   └── screenshots/
+│       ├── hero-storefront.png
+│       ├── lightning-deals.png
+│       └── product-cards.png
 └── src/
     ├── main.jsx
     ├── App.jsx
