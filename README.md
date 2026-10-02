@@ -1,30 +1,30 @@
-# 🛒 Amazon India (Amazon.in) – Great Indian Festival Edition
+# Amazon India (Amazon.in) – Great Indian Festival Edition
 
 A modern, responsive, and interactive **Amazon India (`amazon.in`)** e-commerce web application built using **React**, **Vite**, **Lucide Icons**, and custom CSS. This clone features authentic Indian store localization (Rupee pricing, UPI payments, No Cost EMI, Great Indian Festival theme) alongside unique elements like **Rufus AI Shopping Genie** and **Diwali Spin & Win Jackpot Lucky Wheel**.
 
 ---
 
-## 📸 Website Previews & Screenshots
+## Website Previews & Screenshots
 
-### 1. 🌟 Storefront & Great Indian Festival Header
+### 1. Storefront & Great Indian Festival Header
 ![Amazon India Storefront](docs/screenshots/hero-storefront.png)
 
-### 2. ⚡ Live Lightning Deals with Real-Time Countdown & Progress
+### 2. Live Lightning Deals with Real-Time Countdown & Progress
 ![Amazon India Lightning Deals](docs/screenshots/lightning-deals.png)
 
-### 3. 📱 Top Deals in Mobiles & Audio with Rupee Pricing & EMI
+### 3. Top Deals in Mobiles & Audio with Rupee Pricing & EMI
 ![Amazon India Product Cards](docs/screenshots/product-cards.png)
 
 ---
 
-## 🌟 Key Highlights & Unique Features
+## Key Highlights & Unique Features
 
-### 1. 🤖 Rufus AI India – Smart Shopping & Bargain Assistant
+### 1. Rufus AI India – Smart Shopping & Bargain Assistant
 - Interactive floating shopping assistant widget.
 - **Smart Recommendations**: Instant comparisons (e.g., *OnePlus 12 vs. iPhone 16 Pro*), festival gift ideas under ₹1,000, and secret VIP discount codes (`RUFUSVIP10`).
 - **In-Chat Product Cards**: View products and add items directly to your cart from inside the AI chat.
 
-### 2. 🎰 Diwali Spin & Win Jackpot Wheel
+### 2. Diwali Spin & Win Jackpot Wheel
 - Interactive rotating prize wheel with smooth rotational physics.
 - **Win Instant Rewards**: Win ₹500 Amazon Pay Cashback, 20% discounts, ₹1,000 vouchers, or 1-Month Free Prime.
 - **Confetti Explosion** upon winning with automatic coupon application to your checkout subtotal.
@@ -36,19 +36,19 @@ A modern, responsive, and interactive **Amazon India (`amazon.in`)** e-commerce 
 - **Language Toggle**: One-click switch between **English** and **हिन्दी (Hindi)**.
 - **Delivery PIN Code Selector**: Deliveries mapped to Indian PIN codes & cities (Bengaluru, Mumbai, Delhi, etc.).
 
-### 4. 💳 Multi-Mode Indian Checkout & UPI
+### 4. Multi-Mode Indian Checkout & UPI
 - **UPI Express Checkout**: Support for Google Pay, PhonePe, Paytm, BHIM, and Amazon Pay UPI with instant verification.
 - **RuPay / Credit / Debit Cards** with No-Cost EMI.
 - **Cash on Delivery (COD)** support.
 - **Confetti Celebration Animation** upon placing orders with auto-generated order IDs and tracking references.
 
-### 5. 📦 Orders & Live Package Tracking
+### 5. Orders & Live Package Tracking
 - Orders history modal with order status badges (*Ordered*, *Shipped*, *Out for Delivery*, *Delivered*).
 - **"Buy It Again"** 1-click reorder feature and simulated invoice previews.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
 - **Icons**: [Lucide React](https://lucide.dev/)
@@ -58,7 +58,7 @@ A modern, responsive, and interactive **Amazon India (`amazon.in`)** e-commerce 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 amazon/
@@ -102,7 +102,7 @@ amazon/
 
 ---
 
-## ⚡ Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (version 18+ recommended)
@@ -134,7 +134,7 @@ amazon/
 
 ---
 
-## 👤 Author
+## Author
 **Yeshwanth Sunkara**  
 - GitHub: [@Yeshwanth-develops](https://github.com/Yeshwanth-develops)
 
