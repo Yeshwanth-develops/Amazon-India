@@ -1,0 +1,318 @@
+:root {
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+  
+  /* Amazon Brand Colors */
+  --amz-dark-navy: #131921;
+  --amz-nav-blue: #232f3e;
+  --amz-subnav-blue: #37475a;
+  --amz-yellow: #febd69;
+  --amz-yellow-hover: #f3a847;
+  --amz-orange: #ff9900;
+  --amz-orange-dark: #e47911;
+  --amz-btn-yellow: #ffd814;
+  --amz-btn-yellow-hover: #f7ca00;
+  --amz-btn-orange: #ffa41c;
+  --amz-btn-orange-hover: #fa8900;
+  --amz-prime-blue: #00a8e1;
+  --amz-link-blue: #007185;
+  --amz-link-hover: #c7511f;
+  --amz-deal-red: #cc0c39;
+  --amz-deal-red-bg: #ffebee;
+  --amz-green-success: #067d62;
+  --amz-star: #ffa41c;
+
+  /* Neutrals & Surfaces */
+  --bg-page: #e3e6e6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --text-main: #0f1111;
+  --text-muted: #565959;
+  --text-subtle: #767676;
+  --border-light: #d5d9d9;
+  --border-subtle: #e7e7e7;
+  --border-focus: #e77600;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 15px rgba(254, 189, 105, 0.4);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+a {
+  color: var(--amz-link-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover {
+  color: var(--amz-link-hover);
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout Utilities */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1540px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px 40px;
+  position: relative;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--amz-btn-yellow);
+  color: #0f1111;
+  border: 1px solid #fcd200;
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn-primary:hover {
+  background-color: var(--amz-btn-yellow-hover);
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.8);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-buy-now {
+  background-color: var(--amz-btn-orange);
+  color: #0f1111;
+  border: 1px solid #e38200;
+  border-radius: var(--radius-full);
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn-buy-now:hover {
+  background-color: var(--amz-btn-orange-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0f1111;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn-secondary:hover {
+  background-color: #f7fafa;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+/* Badges */
+.badge-best-seller {
+  background-color: #e67a00;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px 8px 8px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-amazon-choice {
+  background-color: #232f3e;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.badge-amazon-choice span {
+  color: var(--amz-orange);
+}
+
+.badge-deal {
+  background-color: var(--amz-deal-red);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.prime-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--amz-prime-blue);
+  letter-spacing: -0.5px;
+}
+.prime-tag .check {
+  color: var(--amz-orange);
+  margin-right: 2px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Modal Backdrop */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Common Card */
+.amz-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.amz-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive grid system */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+  }
+  .main-content {
+    padding: 0 10px 30px;
+  }
+}
